@@ -1,0 +1,42 @@
+:host {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #333;
+  }
+
+  h1{
+    margin-bottom: 0;
+  }
+
+  .body{
+    background-color: #3CB371;
+    list-style: none;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #32CD32	;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #7FFFD4;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
