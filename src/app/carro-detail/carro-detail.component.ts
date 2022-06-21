@@ -9,7 +9,7 @@ import { Carro } from '../carro';
 export class CarroDetailComponent implements OnInit {
 
   @Input() carro?: Carro;
-  
+
   constructor() { }
 
   ngOnInit(): void {

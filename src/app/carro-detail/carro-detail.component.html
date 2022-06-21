@@ -1,24 +1,25 @@
-<div class="carro-detail" *ngIf="carro">
-    <h2>{{carro.Modelo | uppercase}} [Details] </h2>    
+<div *ngIf="carro">
     <div>
-      <label for="carro-Modelo">Modelo do carro: </label>
-      <input id="carro-Modelo" [(ngModel)]="carro.Modelo" placeholder="Modelo">
-      <br><br>
+      <h2 class="colorWhite">Detalhes do Carro: {{carro.nome}}</h2>
+      <div>
+        <label for="carro-nome"> Nome </label>
+        <input id="carro-nome" [(ngModel)]="carro.nome" placeholder="Nome">
+      </div>
+      <div>
+        <label for="carro-codigo"> Código </label>
+        <input id="carro-codigo" [(ngModel)]="carro.codigo" placeholder="Código">
+      </div>
+      <div>
+        <label for="carro-modelo"> Modelo </label>
+        <input id="carro-modelo" [(ngModel)]="carro.modelo" placeholder="Modelo">
+      </div>
+      <div>
+        <label for="carro-preco"> Preço </label>
+        <input id="carro-preco" [(ngModel)]="carro.preco" placeholder="Preço">
+      </div>
+      <div>
+        <label for="carro-ano"> Ano </label>
+        <input id="carro-ano" [(ngModel)]="carro.ano" placeholder="Ano">
+      </div>
     </div>
-    <div>
-      <label for="carro-Codigo">Código do carro: </label>
-      <input id="carro-Codigo" [(ngModel)]="carro.Codigo" placeholder="Codigo">
-      <br><br>
-    </div>
-    <div>
-      <label for="carro-Preco">Preço: </label>
-      <input id="carro-Preco" [(ngModel)]="carro.Preco" placeholder="Preco">
-      <br><br>
-    </div>
-    <div>
-      <label for="carro-Anodefabricaco">Ano de fabricação: </label>
-      <input id="carro-Anodefabricaco" [(ngModel)]="carro.Anodefabricacao" placeholder="Ano de fabricação">
-      <br><br>
-    </div>
-  </div>
-  <br>
+</div>

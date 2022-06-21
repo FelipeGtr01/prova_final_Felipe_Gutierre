@@ -1,14 +1,8 @@
 import { Carro } from './carro';
 
-export const CARRO: Carro[] = [
-  { Codigo: 11, Modelo: 'Camaro', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 12, Modelo: 'Mustang', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 13, Modelo: 'onix', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 14, Modelo: 'ferrari', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 15, Modelo: 'golf', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 16, Modelo: 'honda civic', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 17, Modelo: 'corolla', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 18, Modelo: 'sandero', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 19, Modelo: 'fox', Preco: 123456789, Anodefabricacao: '2022'},
-  { Codigo: 20, Modelo: 'uno', Preco: 123456789, Anodefabricacao: '2022'}
+export const CARROS: Carro[] = [
+  { nome: 'Camaro', codigo: 123456789, modelo: '2022', preco: 'R$0.000.000,00', ano: 2022 },
+  { nome: 'Audi', codigo: 123456789, modelo: '2022', preco: 'R$0.000,00', ano: 2022 },
+  { nome: 'Tiggo 8', codigo: 123456789, modelo: '2022', preco: 'R$0.000,00', ano: 2022 },
+  { nome: 'Civic', codigo: 123456789, modelo: '2022', preco: 'R$0.000.000,00', ano: 2022 },
 ];

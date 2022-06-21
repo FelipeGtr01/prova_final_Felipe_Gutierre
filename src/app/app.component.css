@@ -50,6 +50,10 @@
     color: #125699;
   }
 
+  .card-container{
+    list-style: none;
+  }
+
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
     .card-container{

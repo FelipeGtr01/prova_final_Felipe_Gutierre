@@ -1,6 +1,7 @@
 export interface Carro {
-    Codigo: number;
-    Modelo: string;
-    Preco: number;
-    Anodefabricacao: string;
+    nome: string;
+    codigo: number;
+    modelo: string;
+    preco: string;
+    ano: number;
   }

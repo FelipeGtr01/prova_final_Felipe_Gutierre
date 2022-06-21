@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Carro } from '../carro';
-import { CARRO } from '../mock-carros';
 
 @Component({
   selector: 'app-cabecalho',
@@ -9,21 +7,9 @@ import { CARRO } from '../mock-carros';
 })
 export class CabecalhoComponent implements OnInit {
 
-  carros = CARRO;
-  selectedCarro?: Carro;
-
-  carro: Carro[] = [];
+  constructor() { }
 
   ngOnInit(): void {
-    this.getCarro();
   }
 
-  onSelect(carro: Carro): void {
-    this.selectedCarro = carro;
-  }
-
-  getCarro(): void {
-    this.carro.service.getCarros()
-        .subscribe(carro => this.carro = carro);
-  }
 }

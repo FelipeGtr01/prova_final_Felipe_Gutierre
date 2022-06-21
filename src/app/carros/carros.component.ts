@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Carro } from '../carro';
-import { CARRO } from '../mock-carros';
+import { CARROS } from '../mock-carros';
 
 @Component({
   selector: 'app-carros',
@@ -9,18 +9,18 @@ import { CARRO } from '../mock-carros';
 })
 export class CarrosComponent implements OnInit {
 
-  carros = CARRO;
-  selectedCarro?: Carro;
-
+  carros = CARROS;
   carro: Carro[] = [];
 
+  constructor() { }
+
+
   ngOnInit(): void {
-    
+
   }
 
+  selectedCarro?: Carro;
   onSelect(carro: Carro): void {
-    this.selectedCarro = carro;
-  }
-
-  
+  this.selectedCarro = carro;
+}
 }

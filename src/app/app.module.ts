@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { CarrosComponent } from './carros/carros.component';
 import { CarroDetailComponent } from './carro-detail/carro-detail.component';
-import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +14,6 @@ import { MessagesComponent } from './messages/messages.component';
     CabecalhoComponent,
     CarrosComponent,
     CarroDetailComponent,
-    MessagesComponent,
   ],
   imports: [
     BrowserModule,
