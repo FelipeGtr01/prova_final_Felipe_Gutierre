@@ -3,11 +3,11 @@ import { Carro } from '../carro';
 import { CARRO } from '../mock-carros';
 
 @Component({
-  selector: 'app-cabecalho',
-  templateUrl: './cabecalho.component.html',
-  styleUrls: ['./cabecalho.component.css']
+  selector: 'app-carros',
+  templateUrl: './carros.component.html',
+  styleUrls: ['./carros.component.css']
 })
-export class CabecalhoComponent implements OnInit {
+export class CarrosComponent implements OnInit {
 
   carros = CARRO;
   selectedCarro?: Carro;
@@ -15,15 +15,12 @@ export class CabecalhoComponent implements OnInit {
   carro: Carro[] = [];
 
   ngOnInit(): void {
-    this.getCarro();
+    
   }
 
   onSelect(carro: Carro): void {
     this.selectedCarro = carro;
   }
 
-  getCarro(): void {
-    this.carro.service.getCarros()
-        .subscribe(carro => this.carro = carro);
-  }
+  
 }
